@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## List all boards
+## Project should have a configuration for each of these
+
+cat /usr/share/arduino/hardware/arduino/boards.txt | sed 's/\([^.]\+\).*/\1/' | sort -u | grep '[a-z0-9]\+' | grep -v '^#'

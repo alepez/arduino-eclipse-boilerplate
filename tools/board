@@ -1,0 +1,5 @@
+#!/bin/bash
+
+BOARD=$1
+
+cat /usr/share/arduino/hardware/arduino/boards.txt | grep "^${BOARD}\." | sed "s/^${BOARD}\.//"
