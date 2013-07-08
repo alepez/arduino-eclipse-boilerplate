@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Set the board type
+
+## TODO: change build configuration and avr preferences.
