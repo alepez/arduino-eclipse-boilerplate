@@ -1,11 +1,12 @@
 #include <Arduino.h>
 
-int main() {
-	init();
-	setup();
-	for (;;) {
-		loop();
-	}
-	return 0;
+void setup() {
+	pinMode(13, OUTPUT);
 }
 
+void loop() {
+	digitalWrite(13, HIGH); // set the LED on
+	delay(100);
+	digitalWrite(13, LOW); // set the LED off
+	delay(900);
+}
